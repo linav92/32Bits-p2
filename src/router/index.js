@@ -22,6 +22,10 @@ const routes =[
     path: "/total",
     component: () => import("../views/Total.vue"),
   },
+  {
+    path: "*",
+    component: () => import("../views/NotFound.vue")
+  }
 ]
 
 const router = new Router({
